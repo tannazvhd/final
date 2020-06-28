@@ -252,7 +252,7 @@ def plusLike():
             return resp
 
 
-@app.route('/plusDislike',methods=['POST']) #add 1 to the like counter of a specific post
+@app.route('/plusDislike',methods=['POST']) #add 1 to the dislike counter of a specific post
 def plusDislike():
     if request.method == 'POST':
         id1=request.json['id']
